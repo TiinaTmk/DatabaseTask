@@ -18,8 +18,10 @@ namespace DatabaseTask.Core.Domain
         public string? Kontaktisik { get; set; }
         public int Kontaktnr { get; set; }
         public string? Email { get; set; }
-        public Töötaja? Töötaja { get; set; }
-        public Harukontor? Harukontor { get; set; }
+
+
+        public ICollection<Employee> Employees { get; set; }
+        public ICollection<Harukontor>? Harukontors { get; set; }
      
     }
 }

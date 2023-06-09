@@ -11,7 +11,7 @@ namespace DatabaseTask.Core.Domain
     {
         [Key]
         public Guid Id { get; set; }
-        public Töötaja Id { get; set; }
+        public Employee Employee { get; set; }
         public int Puhkuse_päevi_kokku { get; set; }
         public DateTime Puhkuse_algus { get; set; }
         public DateTime Puhkuse_lõpp { get; set; }
@@ -19,4 +19,5 @@ namespace DatabaseTask.Core.Domain
         public int Allesolevaid_puhkusepäevi { get; set; }
         public int Aegunud_puhkusepäevi { get; set; }
         public string? Kommentaar { get; set; }
-        public Töötaja? Töötaja { get; set; }
+    }
+}

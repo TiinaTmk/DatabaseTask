@@ -11,11 +11,12 @@ namespace DatabaseTask.Core.Domain
     {
         [Key]
         public Guid Id { get; set; }
+
+        public Employee Töötaja { get; set; }
         public string? Eesnimi { get; set; }
         public string? Perekonnanimi { get; set; }
         public DateTime Sünniaeg { get; set; }
         public int Vanus { get; set; }
         public string? Kommentaar { get; set; }
-        public Töötaja? Töötaja { get; set; }
     }
 }

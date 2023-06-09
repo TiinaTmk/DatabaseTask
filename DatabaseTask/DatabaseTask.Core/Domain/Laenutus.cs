@@ -14,8 +14,9 @@ namespace DatabaseTask.Core.Domain
         public string? Laenutatav_kaup { get; set; }
         public DateTime Laenutamisekp { get; set; }
         public DateTime Tagastamisekp { get; set; }
-        public Töötaja Id { get; set; }
         public string? Kommentaar { get; set; }
-        public Töötaja? Töötaja { get; set; }
+
+
+        public ICollection<Employee> Employees { get; set; }
     }
 }

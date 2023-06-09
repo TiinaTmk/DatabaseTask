@@ -11,10 +11,10 @@ namespace DatabaseTask.Core.Domain
     {
         [Key]
         public Guid Id { get; set; }
-        public Töötaja Id { get; set; }
-        public Boolean Ligipääsuõigus{ get; set; }
+        public Boolean Ligipääsuõigus { get; set; }
         public string? Ligipääsutase { get; set; }
         public DateTime Ligipääsu_alguskp { get; set; }
         public DateTime Ligipääsu_lõppkp { get; set; }
         public string? Kommentaar { get; set; }
-        public Töötaja? Töötaja { get; set; }
+    }
+}

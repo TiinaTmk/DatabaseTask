@@ -11,7 +11,6 @@ namespace DatabaseTask.Core.Domain
     {
         [Key]
         public Guid Id { get; set; }
-        public Töötaja? Id { get; set; }
         public string? Ametinimetus { get; set; }
         public DateTime Ametis_alates { get; set; }
         public DateTime Ametis_kuni { get; set; }
@@ -21,6 +20,9 @@ namespace DatabaseTask.Core.Domain
         public int Otsese_ülemuse_telefon { get; set; }
         public string? Otsese_ülemuse_email { get; set; }
         public string? Kommentaar { get; set; }
-        public Töötaja? Töötaja { get; set; }
+        public Employee? Employees { get; set; }
+
+
+        public ICollection<Ametinimetused> Ametinimetuseds { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Runtime.ExceptionServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,7 +21,9 @@ namespace DatabaseTask.Core.Domain
         public int Kontaktnr { get; set; }
         public string? Email { get; set; }
         public string? Kommentaar { get; set; }
-        public Firma? Firma { get; set; }
-        public Töötaja? Töötaja { get; set; }
+
+
+        public ICollection<Firma> Firmas { get; set; }
+        public ICollection<Employee> Employees { get; set; }
     }
 }
